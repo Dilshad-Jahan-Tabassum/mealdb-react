@@ -1,4 +1,13 @@
-# React + Vite
+# MealDB-React
+
+Live site link:
+- [mealdb-project-with-react](https://react-mealdb-project-dilshad.netlify.app/)
+
+
+
+
+I have used:
+- [Daisy UI](https://daisyui.com/) for theme, navbar
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
