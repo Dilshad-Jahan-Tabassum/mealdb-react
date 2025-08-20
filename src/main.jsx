@@ -1,30 +1,17 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './Pages/Home.jsx'
-import BrowseRecipes from './Pages/BrowseRecipes.jsx'
-import Bookmarks from './Pages/Bookmarks.jsx'
+
+import {BrowserRouter, RouterProvider } from 'react-router-dom'
+import ReactDOM from "react-dom/client";
+import router from './router/Router.jsx'; // router.js file theke router import kora hoyeche
+// router.js file e amra createBrowserRouter diye router create korechi
 
 
-const router = createBrowserRouter([
-  {
-    path:'/',
-    element: <Home></Home>
-  },
-  {
-    path:'/browse-recipes',
-    element: <BrowseRecipes></BrowseRecipes>
-  },
-  {
-    path:'/bookmarks',
-    element: <Bookmarks></Bookmarks>
-  }
-])
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+const root = document.getElementById("root");
+
+ReactDOM.createRoot(root).render(
+
     <RouterProvider router={router}/>
-  </StrictMode>,
+,
+  
 )

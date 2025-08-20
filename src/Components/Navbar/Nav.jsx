@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-
-import React from 'react';
+import './Nav.css';
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [theme, setTheme] = useState('light');
@@ -29,9 +29,9 @@ const Nav = () => {
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">
-      <li><a className='font-bold '>Home</a></li>
-      <li><a className='font-bold  text-primary'>Browse Recipes</a></li>
-      <li><a className='font-bold '>Bookmarks</a></li>
+      <NavLink to="/" >Home</NavLink>
+      <NavLink  to="/browse-recipes" >Browse Recipes</NavLink>
+      <NavLink to="/bookmarks" >Bookmarks</NavLink>
         
     </ul>
     <label className="toggle text-base-content">

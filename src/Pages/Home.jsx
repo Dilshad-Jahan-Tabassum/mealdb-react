@@ -1,13 +1,10 @@
-import Nav from '../Components/Nav';
+import { Outlet } from 'react-router-dom';
+
 
 const Home = () => {
   return (
     <div>
-        <div className='h-18'>
-          <Nav></Nav>
-        </div>
         <h1>home</h1>
-        
     </div>
     
   );
