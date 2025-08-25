@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
-import Nav from '../Components/Navbar/Nav'
-import Footer from '../Components/Footer/Footer';
+import Nav from '../Components/Nav'
+import Footer from '../Components/Footer';
 
 const MainLayout = () => {
     return (
@@ -8,7 +8,7 @@ const MainLayout = () => {
             <div className='h-18'>
                 <Nav></Nav>
             </div>
-            <div className="min-h-[calc(100vh-232px)]">
+            <div className="min-h-[calc(100vh-236px)]">
                 <Outlet></Outlet>
             </div>
             
