@@ -1,13 +1,16 @@
-import React from 'react';
+import '../index.css';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-        <div className="hero container mx-auto min-h-[calc(100vh-172px)] bg-[url(./assets/hero-banner.jpg)]">
-        <div className="hero-content text-center">
+<div className=" mt-8 relative container mx-auto min-h-[calc(100vh-170px)] w-11/12 bg-[url('./assets/hero-banner.jpg')] bg-cover bg-right">            
+<div className="absolute inset-0 bg-black/30"></div>
+
+            {/* Content */}
+            <div className="hero-content text-center pt-20">
             <div className="max-w-md">
-            <h1 className="text-3xl lg:text-5xl font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient pb-2">Turn hunger into happiness</h1>
-            <p className="text-sm py-6 text-fuchsia-400">
+            <h1 className="text-3xl lg:text-5xl font-extrabold bg-gradient-to-r from-orange-600 via-blue-500 to-green-300 text-transparent bg-clip-text bg-300% animate-gradient pb-2">Turn hunger into happiness</h1>
+            <p className="text-md py-6 text-yellow-500">
                 Explore a world of culinary delights with our extensive collection of recipes. Whether you're a seasoned chef or just starting out, we have something for everyone.
             </p>
             <div className='flex flex-col lg:flex-row justify-center gap-4 '>
