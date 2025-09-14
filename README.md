@@ -7,10 +7,11 @@ Live site link:
 
 
 I have used:
-- [Daisy UI](https://daisyui.com/) for theme, navbar
-- [Animated Gradient Text] (https://www.andrealves.dev/blog/how-to-make-an-animated-gradient-text-with-tailwindcss/)
+- [Daisy UI](https://daisyui.com/)
+- [Animated Gradient Text](https://www.andrealves.dev/blog/how-to-make-an-animated-gradient-text-with-tailwindcss/)
 
 
+In this project, i had shown all categories in the home page. Inside all of the categories i have added a button to get knowledge about that category.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

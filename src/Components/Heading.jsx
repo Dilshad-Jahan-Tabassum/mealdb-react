@@ -6,7 +6,7 @@ const Heading = ({title,subtitle}) => {
             <h1 className='text-4xl font-bold mb-4'>
                 {title}
             </h1>
-            <h3 className='text-xl text-gray-500'>
+            <h3 className='text-xl text-center text-gray-500'>
                 {subtitle}
             </h3>
         </div>

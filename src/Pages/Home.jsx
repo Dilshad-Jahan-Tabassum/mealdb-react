@@ -16,7 +16,7 @@ const Home = () => {
       {/* Heading Section   */}
         <Heading 
         title="Welcome to MealDB" 
-        subtitle="Discover Delicious Recipes">
+        subtitle="Discover all categories of meals from around the world!">
 
         </Heading>
 

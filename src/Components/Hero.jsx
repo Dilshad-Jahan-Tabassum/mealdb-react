@@ -13,7 +13,7 @@ const Hero = () => {
             <p className="text-md py-6 text-yellow-500">
                 Explore a world of culinary delights with our extensive collection of recipes. Whether you're a seasoned chef or just starting out, we have something for everyone.
             </p>
-            <div className='flex flex-col lg:flex-row justify-center gap-4 '>
+            <div className='flex flex-col md:flex-row lg:flex-row justify-center gap-4 '>
             <Link to='/browse-recipes' className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
                 <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
                 <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
