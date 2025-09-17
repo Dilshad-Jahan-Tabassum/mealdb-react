@@ -4,6 +4,8 @@ import Bookmarks from '../pages/Bookmarks.jsx'
 import MainLayout from '../layouts/MainLayout.jsx'
 import { createBrowserRouter } from 'react-router-dom'
 import RecipeCard from '../pages/RecipeCard.jsx'
+import SingleRecipeContent from '../Components/singleRecipeContent.jsx'
+import SingleRecipeVideo from '../Components/singleRecipeVideo.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,7 +25,19 @@ const router = createBrowserRouter([
     {
       path:'/recipe/:id',
       element:<RecipeCard></RecipeCard>,
-      loader: ({params})=> fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`)
+      loader: ({params})=> fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`),
+      children:[
+        {
+          index: true,  
+          element: <SingleRecipeContent></SingleRecipeContent>,
+          loader: ({params})=> fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`),
+        },
+        {
+          path:'video',
+          element: <SingleRecipeVideo></SingleRecipeVideo>,
+          loader: ({params})=> fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`),
+        }
+      ],
     },
     {
       path:'/bookmarks',
