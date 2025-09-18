@@ -9,7 +9,9 @@ Live site link:
 I have used:
 - [Daisy UI](https://daisyui.com/)
 - [Animated Gradient Text](https://www.andrealves.dev/blog/how-to-make-an-animated-gradient-text-with-tailwindcss/)
-- [Mamba UI]()
+- [Mamba UI - Components](https://mambaui.com/components)
+- [React-Player](https://www.npmjs.com/package/react-player)
+- [React-Spinner](https://www.npmjs.com/package/react-spinners)
 
 
 In this project, i had shown all categories in the home page. Inside all of the categories i have added a button to get knowledge about that category.

@@ -1,14 +1,16 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData} from 'react-router-dom';
 import ReactPlayer from 'react-player'
+
 
 const SingleRecipeVideo = () => {
     const singleRecipe = useLoaderData();
      //console.log(singleRecipe);
+     
      const recipe = singleRecipe.meals[0];
-     const {strTags,strYoutube} = recipe;
-        console.log(strYoutube);
-        console.log(strTags);
+     const {strYoutube} = recipe;
+        // console.log(strYoutube);
+        // console.log(strTags);
     
     return (
         <div>

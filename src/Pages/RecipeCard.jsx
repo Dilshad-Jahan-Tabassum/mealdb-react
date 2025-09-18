@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Link, Outlet, useLoaderData } from 'react-router-dom';
+import { Link, Outlet, useLoaderData, useNavigation } from 'react-router-dom';
 import { MdOutlineOndemandVideo } from "react-icons/md";
+import Loader from '../Components/Loader';
 
 const RecipeCard = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -9,7 +10,8 @@ const RecipeCard = () => {
      const recipe = singleRecipe.meals[0];
      const {strMeal,strCategory,strArea} = recipe;
     //console.log(recipe.strMeal);
-
+    const navigation = useNavigation();
+  if(navigation.state === 'loading') return <Loader />;
     return (
         <div>
             <div className="py-5 mb-5 space-y-4 place-items-center">
