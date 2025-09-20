@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link, Outlet, useLoaderData, useNavigation } from 'react-router-dom';
 import { MdOutlineOndemandVideo } from "react-icons/md";
 import Loader from '../Components/Loader';
+import { MdBookmarkAdd } from "react-icons/md";
+import { saveRecipes } from '../utils';
+
 
 const RecipeCard = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -11,6 +14,12 @@ const RecipeCard = () => {
      const {strMeal,strCategory,strArea} = recipe;
     //console.log(recipe.strMeal);
     const navigation = useNavigation();
+
+    const handleBookmark = (recipe) => {
+        console.log('Bookmark added', recipe);
+        saveRecipes(recipe);
+    }
+
   if(navigation.state === 'loading') return <Loader />;
     return (
         <div>
@@ -35,7 +44,11 @@ const RecipeCard = () => {
 
                     <span>Video</span>
                 </Link>
-            
+                {/* bookmark button  */}
+                <div onClick={() => handleBookmark(recipe)} className='cursor-pointer ml-5 hover:bg-pink-400 bg-blue-400 p-2 rounded-full text-black w-12 h-12 flex justify-center items-center'>
+                    <MdBookmarkAdd size={25}/>
+                </div>
+
             </div>
         
             

@@ -12,8 +12,8 @@ I have used:
 - [Mamba UI - Components](https://mambaui.com/components)
 - [React-Player](https://www.npmjs.com/package/react-player)
 - [React-Spinner](https://www.npmjs.com/package/react-spinners)
-
-
+- [React icons](https://react-icons.github.io/react-icons/)
+- [React-hot-toast](https://react-hot-toast.com/)
 In this project, i had shown all categories in the home page. Inside all of the categories i have added a button to get knowledge about that category.
 In browse-recipes page all of the recipes have a button. If any user click to see the details of that recipe it will take another page to see the details. There i have used article component from Mamba UI.
 
