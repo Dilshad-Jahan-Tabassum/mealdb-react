@@ -8,13 +8,13 @@ const MainLayout = () => {
             <div className='h-18'>
                 <Nav></Nav>
             </div>
-            <div className="min-h-[calc(100vh-172px)]">
+            <div className="min-h-[calc(100vh-175px)]">
                 <Outlet></Outlet>
             </div>
             
             <Footer></Footer>
         </div>
-    );
-};
+    )
+}
 
 export default MainLayout;

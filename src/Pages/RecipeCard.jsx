@@ -45,7 +45,7 @@ const RecipeCard = () => {
                     <span>Video</span>
                 </Link>
                 {/* bookmark button  */}
-                <div onClick={() => handleBookmark(recipe)} className='cursor-pointer ml-5 hover:bg-pink-400 bg-blue-400 p-2 rounded-full text-black w-12 h-12 flex justify-center items-center'>
+                <div onClick={() => handleBookmark(recipe)} className='cursor-pointer ml-5 hover:bg-pink-600 bg-blue-600 p-2 rounded-full text-black w-12 h-12 flex justify-center items-center'>
                     <MdBookmarkAdd size={25}/>
                 </div>
 

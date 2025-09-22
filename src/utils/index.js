@@ -24,7 +24,7 @@ export const saveRecipes = (recipe) =>{
 }
 
 //delete
-export const deleteRecipe = (idMeal) =>{
+export const deleteRecipes = (idMeal) =>{
     let recipes = getRecipes();
     const remainingRecipes = recipes.filter(r=> r.idMeal !== idMeal);
     localStorage.setItem('recipes', JSON.stringify(remainingRecipes));
