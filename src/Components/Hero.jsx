@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-<div className=" mt-8 relative container mx-auto min-h-[calc(100vh-170px)] w-11/12 bg-[url('./assets/hero-banner.jpg')] bg-cover bg-right">            
+<div className=" mt-8 relative container mx-auto min-h-[calc(100vh-172px)] w-11/12 bg-[url('./assets/hero-banner.jpg')] bg-cover bg-right">            
 <div className="absolute inset-0 bg-black/30"></div>
 
             {/* Content */}
