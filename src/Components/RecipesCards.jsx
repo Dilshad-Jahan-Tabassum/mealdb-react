@@ -8,7 +8,7 @@ const RecipesCards = ({recipeCard, deletable, handleDelete}) => {
   
   return (
         <div className="relative">
-          <div className="card bg-base-100 w-96 shadow-lg border border-gray-400 p-5 transition-transform hover:scale-105 mb-5">
+          <div className=" card bg-base-100 w-full lg:w-96 shadow-lg border border-gray-400 p-5 transition-transform hover:scale-105 mb-5">
           <figure className="rounded-lg">
             <img className="h-68 w-full object-cover"
               src={strMealThumb || strSource}

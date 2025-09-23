@@ -27,7 +27,7 @@ const RecipeCard = () => {
                         <h3  className=" text-2xl font-semibold sm:text-3xl">{strMeal}</h3>
                         <p className="text-sm text-gray-400">Category: {strCategory} | Area: {strArea}</p>
             </div>
-            <div className="flex items-center overflow-x-auto overflow-y-hidden sm:justify-center flex-nowrap  dark:bg-gray-100 dark:text-gray-800">
+            <div className="flex items-center overflow-x-auto overflow-y-hidden justify-center flex-nowrap  dark:bg-gray-100 dark:text-gray-800">
                 <Link to=''
                 onClick={()=> setTabIndex(0)}
                 className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 0 ? 'border border-b-0' : 'border-b' } rounded-t-lg dark:border-gray-600 dark:text-gray-900">`}>

@@ -32,7 +32,7 @@ const Categories = ({categories}) => {
                     <div className="modal-box bg-cyan-900 text-white">
                       <figure className='w-1/2 mx-auto'>
                         <img
-                          className='w-60 h-58 rounded-full border-3 border-emerald-600 object-cover'
+                          className='w-40 h-40 md:w-48 md:h-48 lg:w-58 lg:h-58 rounded-full border-3 border-emerald-600 object-cover'
                           src={selectCategory.strCategoryThumb}
                           alt="category image not available"/>
                       </figure>
