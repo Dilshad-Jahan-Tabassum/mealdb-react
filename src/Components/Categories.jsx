@@ -13,7 +13,7 @@ const Categories = ({categories}) => {
              <div key={category.idCategory} className="card card-side bg-cyan-900 shadow-lg shadow-cyan-500 flex gap-5 items-center transition-transform hover:scale-105 hover:cursor-pointer p-1">
                <figure className='w-1/2  h-full lg:px-3'>
                 <img
-                className='rounded-full border-2 border-cyan-300 md:w-37 md:h-37 w-46 h-46 '
+                className='rounded-full border-2 border-cyan-300 w-28 h-28 md:w-37 md:h-37 lg:w-46 lg:h-46 '
                   src={category.strCategoryThumb}
                   alt="category image not available"/>
               </figure>
